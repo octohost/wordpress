@@ -1,7 +1,5 @@
-php_flag short_open_tag On
 php_value upload_max_filesize 32M
 php_value post_max_size 32M
-php_flag expose_php Off
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
