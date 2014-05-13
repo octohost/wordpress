@@ -6,9 +6,10 @@ The way this is installed:
 1. You have a source controlled copy of all Wordpress core, plugins, themes and HTML/CSS/JS.
 2. All configuration is done via environment variables.
 3. All uploads are sent to S3.
-4. Installs are painless \(via git push\) and all data is stored outside of the container.
-5. When WordPress needs to be updated, it will be much easier with the items in source code control.
-6. After a WordPress hack - you can just restart the container.
+4. All emails are sent via SMTP.
+5. Installs are painless \(via git push\) and all data is stored outside of the container.
+6. When WordPress needs to be updated, it will be much easier with the items in source code control.
+7. After a WordPress hack - you can just restart the container.
 
 All required environment variables are detailed below:
 
@@ -45,6 +46,7 @@ To install.
 2. In S3, grant your user permission to write to a bucket for your uploads.
 3. On the octohost - set up all of the config variables.
 4. Clone and push.
+5. Activate the plugins and configure items in the admin interface.
 
 ```
 git clone https://github.com/octohost/wordpress.git
