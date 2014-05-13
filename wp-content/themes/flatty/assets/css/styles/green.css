@@ -1,0 +1,50 @@
+/* GREEN STYLE */
+a {
+    color: #8caa46;
+}
+a:hover {
+    color: #097365;
+}
+.navbar,
+.widgettitle {
+    border-color: #8caa46;
+}
+.navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-post-ancestor>a,
+.navbar-nav>li.current-page-ancestor>a,
+.navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-post-ancestor>a:hover,
+.navbar-nav>li.current-page-ancestor>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.widget_calendar table thead {
+    background: #8caa46;
+}
+.navbar-nav>li>.dropdown-menu {
+    border-top: 4px solid #8caa46;
+}
+ul.nav.navbar-nav>li>a:hover {
+    background: #4c6a16;
+}
+.dropdown-menu>li>a:hover {
+    background: #8caa46;
+}
+a.btn,
+button.btn {
+    background: #8caa46;
+    border-color: #8caa46;
+}
+a.btn:hover,
+button.btn:hover,
+a.btn.active,
+button.btn.active {
+    background: #097365;
+    border-color: #097365;
+}
+.form-control:focus {
+    border-color: #8caa46;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(140,170,70,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(140,170,70,0.6);
+}

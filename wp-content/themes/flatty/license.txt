@@ -1,0 +1,37 @@
+Licenses
+--------
+
+Fonts:
+
+    Font: Lily Script One
+    Author: Julia Petretta
+    License: SIL Open Font License, 1.1
+    License URI: http://scripts.sil.org/OFL
+
+    Font: Abel
+    Author: MADType
+    License: SIL Open Font License, 1.1
+    License URI: http://scripts.sil.org/OFL
+
+Flatty:
+
+    License: GNU General Public License v3 or later
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Bootstrap:
+
+    License: Apache License v2.0
+    License URI: http://www.apache.org/licenses/LICENSE-2.0
+
+Font Awesome:
+
+    Font Awesome by Dave Gandy - http://fontawesome.io
+    License: SIL Open Font License, 1.1
+    License URI: http://scripts.sil.org/OFL
+
+Images:
+
+    License: GNU General Public License v3 or later
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+	

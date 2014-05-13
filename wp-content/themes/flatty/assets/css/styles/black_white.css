@@ -1,0 +1,79 @@
+/* BLACK AND WHITE STYLE */
+.breadcrumb,
+.well {
+    background: #222;
+    border: #222;
+    color: #fff;
+}
+a {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.navbar,
+.widgettitle {
+    border-color: #fff;
+}
+.navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-post-ancestor>a,
+.navbar-nav>li.current-page-ancestor>a,
+.navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-post-ancestor>a:hover,
+.navbar-nav>li.current-page-ancestor>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.widget_calendar table thead {
+    color: #222;
+    background: #fff;
+}
+.navbar-nav>li>.dropdown-menu {
+    border-top: 4px solid #fff;
+}
+ul.nav.navbar-nav>li>a:hover {
+    background: #ccc;
+    color: #333;
+}
+.dropdown-menu>li>a:hover {
+    background: #222;
+    color: #fff;
+}
+a.btn,
+button.btn {
+    color: #222;
+    background: #eee;
+    border-color: #ccc;
+}
+a.btn:hover,
+button.btn:hover,
+a.btn.active,
+button.btn.active {
+    color: #fff;
+    background: #999;
+    border-color: #888;
+}
+#comments,
+#comments a,
+div#respond,
+div#respond a {
+    color: #333;
+}
+#comments a.btn,
+div#respond a.btn {
+    color: #333;
+}
+#comments a.btn:hover,
+div#respond a.btn:hover {
+    color: #fff;
+}
+.widget_calendar table caption {
+    color: #333;
+}
+.form-control:focus {
+    border-color: #ffffff;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,255,255,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,255,255,0.6);
+}

@@ -1,0 +1,50 @@
+/* SALMON STYLE */
+a {
+    color: #FA8072;
+}
+a:hover {
+    color: #DA6052;
+}
+.navbar,
+.widgettitle {
+    border-color: #FA8072;
+}
+.navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-post-ancestor>a,
+.navbar-nav>li.current-page-ancestor>a,
+.navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-post-ancestor>a:hover,
+.navbar-nav>li.current-page-ancestor>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.widget_calendar table thead {
+    background: #FA8072;
+}
+.navbar-nav>li>.dropdown-menu {
+    border-top: 4px solid #FA8072;
+}
+ul.nav.navbar-nav>li>a:hover {
+    background: #BA5042;
+}
+.dropdown-menu>li>a:hover {
+    background: #FA8072;
+}
+a.btn,
+button.btn {
+    background: #FA8072;
+    border-color: #FA8072;
+}
+a.btn:hover,
+button.btn:hover,
+a.btn.active,
+button.btn.active {
+    background: #EA7062;
+    border-color: #EA7062;
+}
+.form-control:focus {
+    border-color: #FA8072;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(250,128,114,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(250,128,114,0.6);
+}
