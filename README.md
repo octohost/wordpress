@@ -6,9 +6,9 @@ The way this is installed:
 1. You have a source controlled copy of all Wordpress core, plugins, themes and HTML/CSS/JS.
 2. All configuration is done via environment variables.
 3. All uploads are sent to S3.
-4. Installs are painless \(via git push\) and all data is stored outside of the ephemeral container.
-5. When WordPress needs to be updated, it will be easier this way.
-6. When WordPress needs to be cleaned after a hack - you can just restart the container.
+4. Installs are painless \(via git push\) and all data is stored outside of the container.
+5. When WordPress needs to be updated, it will be much easier with the items in source code control.
+6. After a WordPress hack - you can just restart the container.
 
 All required environment variables are detailed below:
 
