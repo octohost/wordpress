@@ -55,7 +55,7 @@ class BackWPup_Destination_S3 extends BackWPup_Destinations {
 	 */
 	public function option_defaults() {
 
-		return array( 's3accesskey' => '', 's3secretkey' => '', 's3bucket' => '', 's3region' => 'us-east-1', 's3base_url' => '', 's3ssencrypt' => '', 's3storageclass' => '', 's3dir' => trailingslashit( sanitize_file_name( get_bloginfo( 'name' ) ) ), 's3maxbackups' => 15, 's3syncnodelete' => TRUE, 's3multipart' => TRUE );
+		return array( 's3accesskey' => getenv("AWS_ACCESS_KEY_ID"), 's3secretkey' => getenv("AWS_SECRET_ACCESS_KEY"), 's3bucket' => '', 's3region' => 'us-east-1', 's3base_url' => '', 's3ssencrypt' => '', 's3storageclass' => '', 's3dir' => trailingslashit( sanitize_file_name( get_bloginfo( 'name' ) ) ), 's3maxbackups' => 15, 's3syncnodelete' => TRUE, 's3multipart' => TRUE );
 	}
 
 
