@@ -94,7 +94,7 @@
 	</div>
      <div class="featuretext_top">
 			 <h3><?php echo get_theme_mod( 'featured_textbox' ); ?></h3>
-             <p><?php echo get_theme_mod( 'featured_textbox_text' ); ?></p>
+             <p><a href="<?php echo esc_url( get_theme_mod( 'header_one_url' ) ); ?>"><?php echo esc_html(get_theme_mod( 'featured_textbox_text' ) ); ?></a></p>
 	</div>
     <?php endif; ?>
 	<div id="main" class="site-main">

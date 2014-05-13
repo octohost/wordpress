@@ -45,7 +45,9 @@
 	</div>
         </div><!-- footer container -->
         <div class="site-info">
-			<?php printf( __( 'Powered by %1$s. %2$s theme by %3$s.', 'adamos' ),'<a href="http://wordpress.org/" target="_blank">WordPress</a>', '<a href="http://www.templateexpress.com/adamos-theme/" target="_blank">adamos</a>', 'Ossie' ); ?>
+            <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
+            <?php _e('Adamos WordPress Theme','adamos'); ?></a>
+            <?php echo __( 'Powered By WordPress ', 'adamos' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->

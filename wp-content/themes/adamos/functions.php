@@ -62,6 +62,7 @@ function adamos_setup() {
 	add_theme_support('post-thumbnails');
 	add_image_size( 'frontpage-thumbnail', 460, 160, true);
 	add_image_size( 100, 300, true);
+	add_image_size( 'featured', 650, 300, true );
 
 	/**
 	 * Add support for the Aside Post Formats
@@ -199,14 +200,14 @@ require( get_template_directory() . '/inc/custom-header.php' );
 
 function adamos_add_scripts() {
 	if (!is_admin()) {
-    wp_enqueue_script('flexslider', get_stylesheet_directory_uri('stylesheet_directory').'/js/jquery.flexslider-min.js', array('jquery'));
-    wp_enqueue_script('flexslider-init', get_stylesheet_directory_uri('stylesheet_directory').'/js/flexslider-init.js', array('jquery', 'flexslider'));
+    wp_enqueue_script('flexslider', get_template_directory_uri('stylesheet_directory').'/js/jquery.flexslider-min.js', array('jquery'));
+    wp_enqueue_script('flexslider-init', get_template_directory_uri('stylesheet_directory').'/js/flexslider-init.js', array('jquery', 'flexslider'));
 	}
 }
 add_action('wp_enqueue_scripts', 'adamos_add_scripts');
 
 function adamos_add_styles() {
-    wp_enqueue_style('flexslider', get_stylesheet_directory_uri('stylesheet_directory').'/js/flexslider.css');
+    wp_enqueue_style('flexslider', get_template_directory_uri('stylesheet_directory').'/js/flexslider.css');
 }
 add_action('wp_enqueue_scripts', 'adamos_add_styles');
 
@@ -261,7 +262,7 @@ function adamos_customizer( $wp_customize ) {
 $wp_customize->add_control(
     'featured_textbox',
     array(
-        'label' => 'Featured text',
+        'label' => 'Featured text main',
         'section' => 'featured_section_top',
         'type' => 'text',
     )
@@ -278,7 +279,22 @@ $wp_customize->add_setting(
 	$wp_customize->add_control(
 		'featured_textbox_text',
 		array(
-			'label' => 'Featured text',
+			'label' => 'Featured sub text',
+			'section' => 'featured_section_top',
+			'type' => 'text',
+		)
+	);
+	
+	$wp_customize->add_setting( 'header_one_url',
+    array(
+        'default' => __( 'Featured sub text url', 'adamos' ),
+		'sanitize_callback' => 'adamos_sanitize_url',
+    ) );
+	
+	$wp_customize->add_control(
+		'header_one_url',
+		array(
+			'label'    => __( 'Featured sub text url', 'adamos' ),
 			'section' => 'featured_section_top',
 			'type' => 'text',
 		)
@@ -456,6 +472,11 @@ return $excerpt;
  function adamos_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );
 }
+
+function adamos_sanitize_url( $input ) {
+    return wp_kses_post( force_balance_tags( $input ) );
+}
+
 
 add_filter( 'wp_title', 'adamos_wp_title' );
 
