@@ -1,0 +1,280 @@
+.shortn_it_url_prefix
+.shortn_it_url_wrap,
+#shortn_it_url,
+#edit_shortn_it_url_buttons {
+	display: inline-block;}
+
+.shortn_it_url_prefix {
+	font-size: 95%;
+	vertical-align: middle;}
+	
+#shortn_it_url {
+	width: 80px;}
+	
+#shortn_it_url.hide,
+#edit_shortn_it_url_buttons .edit.hide,
+#edit_shortn_it_url_buttons .save.hide {
+	display: none;}
+
+#edit_shortn_it_url_buttons .edit {
+	margin-left: 1em;}
+
+#edit_shortn_it_url_buttons .cancel {
+	font-size: 80%;}
+
+/* CSS3 Gradient Buttons 
+Thanks to http://www.webdesignerwall.com/tutorials/css3-gradient-buttons/
+---------------------------------------------- */
+.cssbutton {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);}
+
+.cssbutton:hover {
+	text-decoration: none;}
+
+.cssbutton:active {
+	position: relative;
+	top: 1px;}
+
+
+.bigrounded {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;}
+
+
+/* blue */
+.blue {
+	color: #fff;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');}
+.blue:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+	color: white;}
+.blue:active {
+	color: #80bed6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');}
+
+/* gray */
+.gray {
+	color: #eee;
+	border: solid 1px #555;
+	background: #6e6e6e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#888));
+	background: -moz-linear-gradient(top,  #888,  #575757);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');}
+.gray:hover {
+	background: #616161;
+	background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+	background: -moz-linear-gradient(top,  #757575,  #4b4b4b);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#4b4b4b');}
+.gray:active {
+	color: #afafaf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+	background: -moz-linear-gradient(top,  #575757,  #888);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#888888');}
+
+/* Coda-inspired slider */
+/*
+#slider {
+    width: 650px;
+    margin: 0 0;
+    position: relative;}
+
+.scroll {
+    height: 500px;
+    width: 582px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;}
+*/
+ul.navigation {
+    list-style: none;
+    margin: 12px 0 15px 5px;
+    padding: 0;}
+
+ul.navigation li {
+    display: inline;
+    margin-right: 10px;}
+
+ul.navigation a {
+    padding: 5px 25px 5px 25px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+
+ul.navigation a:hover {
+    background-color: #f6f6f6;}
+
+ul.navigation a.selected {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+ul.navigation a:focus {
+    outline: none;}
+
+.hide {
+    display: none;}
+
+/* Shortn.It overrides */
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;}
+
+.shortn-wrapper {
+	width: 100%;
+	border: 1px solid #ddd;
+	margin: 0 0 0 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');}
+
+.shortn-wrapper input[type=text] {
+	font-size: 16px;
+	width: 300px;}
+
+.shortn-wrapper p {
+	margin: 10px 10px 5px 10px;}
+
+.shortn-wrapper ul {
+	margin: 15px 0 0 25px;}
+
+.shortn-wrapper ul li {
+	list-style-type: square;}
+
+#buy-button {
+	height: 40px;
+	margin-right: 10px;}
+
+#buy-button a {
+	float: right;}
+
+.shortn-section-header {
+	background: #EEE;
+	font-weight: normal;
+	text-shadow: -1px 1px 1px #FFF;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	height: 30px;
+	margin: 5px;}
+
+.shortn-section-header h3,
+.upgrade-now {
+	float: left;
+	margin: 0;
+	padding: 5px;}
+
+.upgrade-now {
+	float: right;}
+
+.shortn-section-header p {
+	margin: 0;}
+
+.upgrade-now a {
+	color: #000;}
+
+.shortn-controls-group {
+	clear: both;
+	margin: 10px 0 10px 0;
+	min-height: 50px;}
+
+.shortn-controls-group h3 {
+	margin-left: 10px;}
+
+.shortn-controls-group label.radio {
+	float: left;
+	margin-right: 15px;
+	width: 200px;
+	font-size: 13px;}
+
+.shortn-controls-group label {
+	font-size: 14px;}
+
+.shortn-controls-group label input[type=radio] {
+	padding: 0;
+	margin: -2px 10px 0 0;}
+
+#custom-domain-input, #custom-prefix-input {
+	clear: both;
+	padding-top: 10px;}
+
+.shortn-look-like {
+	clear: both;
+	width: 100%;
+	margin: 25px 0 15px 10px;}
+
+.shortn-look-like p {
+	font-size: 15px;
+	margin: 0;}
+
+.shortn-look-like h3 {
+	float: none;
+	clear: both;}
+
+.shortn-save-button {
+	float: right;
+	clear: both;
+	margin: 0 5px 10px 0;
+	font-size: 14px;}
+
+#advanced input[type=text] {
+	margin: 10px 0 10px 0;}
+
+#advanced label, #auto label {
+	font-size: 14px;
+	margin: 5px 0 10px 10px;}
+
+#advanced label.checkbox, #auto label.checkbox {
+	clear: both;
+	display: block;
+	float: left;
+	background: transparent;}
+
+#shortn_it_custom_form label {
+	font-weight: bold;
+	display: none;}
+
+#warning-msg {
+	color: #FF4444;
+	display: inline-block;
+	margin-left: 10px;}
