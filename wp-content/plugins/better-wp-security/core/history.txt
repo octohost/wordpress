@@ -1,0 +1,88 @@
+1.0.0 - 2014-03-25 - Chris Wiegman
+	Initial Release
+1.0.1 - 2014-03-25 - Chris Wiegman
+	Better conversion of ip to cidr
+1.0.2 - 2014-03-27 - Chris Wiegman
+    Don't show security menu on multisite for non network admins
+    Fix for module path of windows servers
+    Module path working correctly on Windows servers
+    404 white list should transfer to global white list
+    White list implementation working across all lockouts
+    Add extra dismiss box to close welcome modal (fix for smaller screens)
+1.0.3 - 2014-04-01 - Chris Wiegman
+	Fixed history.txt (for iThemes customers)
+	Moved upgrade to separate function for more seamless update
+	Upgrade system rewritten for better functionality
+	Make sure 404 doesn't fail if there is not a 404.php in the theme
+	Make sure WordPress root URLs render correctly
+	Filewrite now only builds rules on demand.
+	Fixed dismiss button on intro modal for small screens
+	General cleanup and typo fixing
+1.0.4 - 2014-04-02 - Chris Wiegman
+	Added ability to manually purge log table
+1.0.5 - 2014-04-03 - Chris Wiegman
+	Added "Show intro" button next to screen options to bring the intro modal back
+	Added ability to use HTML in error messages
+	Minor copy and other tweaks
+1.0.6 - 2014-05-03 - Chris Wiegman
+	Execute permanent ban on the correct lockout count, not the next one
+	Updated quick ban rules to match standard ban rules (will work with proxy)
+1.0.7 - 2014-05-03 - Chris Wiegman
+	Update plugin build
+1.0.8 - 2014-04-08 - Chris Wiegman
+	Make sure global settings save button matches others
+	Fixed link in locout email
+	Email address settings retain end of line
+	Sanitize email addresses on save and not just use
+	Make sure whitelist is actually an array before trying to process
+	Make sure rewrite rules show on dashboard when file writing isnt allowed
+	Added extra information to dashboard server information to help troubleshooting
+1.0.9 - 2014-04-10 - Chris Wiegman
+	Minor typo fixes
+	Update nginx rewrite rule on comment spam when domain mapping is active
+	Added the ability to disable file locking (old behavior)
+	Better file lock release (try more than 1 method) before failing
+	Don't automatically show file lock error on first attempt
+1.0.10 - 2014-04-14 - Chris Wiegman
+	When activating SSL Log out the user to prevent cookie conflicts
+	Use LOCK_EX as a second file locking method on wp-config.php and .htaccess
+	Minor code cleanup
+	Make sure all wp_enqueue_script dependencies are in proper format
+1.0.11 - 2013-04-17 - Chris Wiegman
+	Make sure logs directory is present before trying to use it
+	Log a message when witelisted host triggers a lockout
+	Don't create log files if they're not going to be used
+	Miscellaneous typos and orther bugfixes
+	Add pro tab if pro modules need it
+	Upgrade module loader to only load what is needed
+1.0.12 - 2014-04-18 - Chris Wiegman
+	Make sure uploads directory is only working in blog 1 in multisite
+	Better checks for run method in module loader
+1.1.0 - 2014-04-21 - Chris Wiegman
+	Make sure "remove write permissions" works
+	Better descriptions on white list
+	Add pro table of contents if needed
+	Make sure security admin bar item works
+	Make sure lockout message only happens when needed
+	Suppress errors on readlink calls
+	Make sure class is present for permanent ban
+	Make sure white list is an array
+	Fix white listed IPs not working
+1.1.1 - 2014-04-24 - Chris Wiegman
+	Miscellaneous typos and other fixes
+	Remove extra file lock on saving .htaccess, nginx.conf and wp-config.php. Only flock will be used in these operations
+1.2.0 - 2014-05-07 - Chris Wiegman
+    Better cache clearing and formatting updates
+    Make sure rewrite rules are updated on this update
+    Remove extra (settings) items from admin bar menu (leave logs and important information)
+    Add WP_CONTENT_DIR to system information on dashboard
+    Move support nag to free version only and make sure it properly redirects
+    Fix check for presence of BackupBuddy to work with BackupBuddy >=4.2.16.0
+    Clean up details views on log pages
+    Add username column to temp and lockouts tables
+    Lockout usernames whether they exist or not
+    Don't duplicate lockouts
+    Fixed malformed lockout error on lockout message
+    Don't display a host lockout when none exists
+    Add Sync integration to release lockouts
+    Improved reliability of brute force user lockouts

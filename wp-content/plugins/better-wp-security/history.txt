@@ -1,0 +1,143 @@
+
+4.0.0 - 2014-03-25 - Chris Wiegman
+	Initial Release
+4.0.1 - 2014-03-25 - Packaging Bot (modules/free)
+	Initial Release
+4.0.2 - 2014-03-25 - Packaging Bot (core)
+	Initial Release
+4.0.3 - 2014-03-26 - Packaging Bot (lib/icon-fonts)
+	Fixed issue with admin menu icons not functioning properly on sites that have an ABSPATH or WP_CONTENT_DIR of "/".
+4.0.4 - 2014-03-27 - Packaging Bot (core)
+	Initial Release
+4.0.5 - 2014-03-27 - Packaging Bot (modules/free)
+	Initial Release
+4.0.6 - 2014-04-01 - Packaging Bot (core)
+	Fixed history.txt (for iThemes customers)
+	Moved upgrade to separate function for more seamless update
+	Upgrade system rewritten for better functionality
+	Make sure 404 doesn't fail if there is not a 404.php in the theme
+	Make sure WordPress root URLs render correctly
+	Filewrite now only builds rules on demand.
+	Fixed dismiss button on intro modal for small screens
+	General cleanup and typo fixing
+4.0.7 - 2014-04-01 - Packaging Bot (modules/free)
+	Updated modules/free to version 1.0.3
+4.0.8 - 2014-04-01 - Packaging Bot (modules/free)
+	Updated modules/free to version 1.0.4
+4.0.9 - 2014-04-02 - Packaging Bot (modules/free)
+	only save post meta for ssl when the value is true
+	fixed missing admin user settings if only one part had been changed
+	SSL Redirection working properly on front end. No more redirect errors
+	hide backend will warn of the new url when saving
+	hide backend will now email the notification email(s) when the login area has been moved
+	Added BackupBuddy coupon
+4.0.10 - 2014-04-02 - Packaging Bot (core)
+	Added ability to manually purge log table
+4.0.11 - 2014-04-03 - Packaging Bot (core)
+	Added "Show intro" button next to screen options to bring the intro modal back
+	Added ability to use HTML in error messages
+	Minor copy and other tweaks
+4.0.12 - 2014-04-03 - Packaging Bot (modules/free)
+	Private posts will now work with hide backend
+	Added an option for custom login action that can bypass hide login
+	Allow admin-ajax.php to bypass hide backend
+	Added filters for external backup plugins to register with the dashboard
+	Enable theme compatibility mode by default
+	Miscellaneous copy and function doc fixes
+4.0.13 - 2014-04-05 - Packaging Bot (core)
+	Execute permanent ban on the correct lockout count, not the next one
+	Updated quick ban rules to match standard ban rules (will work with proxy)
+4.0.14 - 2014-04-05 - Packaging Bot (modules/free)
+	Fixed an NGINX rule that didn't actually block XMLRPC.php
+	Updated rule order on ban users
+	Fixed a bug that could prevent away from from turning off in certain time configurations (this resulted in the return to homepage on login)
+	Updated some function doc
+4.0.15 - 2014-04-05 - Packaging Bot (core)
+	Update plugin build
+4.0.16 - 2014-04-05 - Packaging Bot (modules/free)
+	Fixed bug preventing file change scanning from advancing when chunked
+	Don't autoload file list on non-multisite installations
+	Make sure away mode settings transfer from 3.x or disable away mode
+4.0.17 - 2014-04-08 - Packaging Bot (modules/free)
+	Make sure unset admin user field remains if the other setting has been fixed
+	Removed admin user from settings table of contents
+	Make sure array input is trimmed in file change module
+	Correct input type on file change settings sanitization
+	Use full URL on file change warning redirect to prevent invalid target
+	Reduce erroneous hide backend change warnings
+	When accessing htaccess or wpconfig make sure opening settings changes are 664 instead of 644 to reduce issues
+	Update hackrepair.com's Agents blacklist
+4.0.18 - 2014-04-08 - Packaging Bot (core)
+	Make sure global settings save button matches others
+	Fixed link in locout email
+	Email address settings retain end of line
+	Sanitize email addresses on save and not just use
+	Make sure whitelist is actually an array before trying to process
+	Make sure rewrite rules show on dashboard when file writing isnt allowed
+	Added extra information to dashboard server information to help troubleshooting
+4.0.19 - 2014-04-08 - Packaging Bot (modules/free)
+	Clean up away mode to prevent lockouts on update or other points
+4.0.20 - 2014-04-10 - Packaging Bot (core)
+	Updated core to version 1.0.9
+4.0.21 - 2014-04-10 - Packaging Bot (modules/free)
+	Updated modules/free to version 1.0.11
+4.0.22 - 2014-04-14 - Packaging Bot (core)
+	Updated core to version 1.0.10
+4.0.23 - 2014-04-14 - Packaging Bot (modules/free)
+	Updated modules/free to version 1.0.12
+4.0.24 - 2014-04-17 - Packaging Bot (core)
+	Make sure logs directory is present before trying to use it
+	Log a message when witelisted host triggers a lockout
+	Don't create log files if they're not going to be used
+	Miscellaneous typos and orther bugfixes
+	Add pro tab if pro modules need it
+	Upgrade module loader to only load what is needed
+4.0.25 - 2014-04-17 - Packaging Bot (modules/free)
+	Make sure backup directory is present before trying to use it
+	Make sure backup file method is respected on all backup operations
+	Added ability to limit number of backups saved to disk
+	Minor typo and other fixes
+	Only load front-end classes as needed
+	Add link to free support at .org forums
+	Remove select(?ed) from suspicious query strings for 3.9 compatibility
+	Fixed domain mapping issue (requires http://wordpress.org/plugins/wordpress-mu-domain-mapping/ domain mapping plugin)
+	Remove array type errors on 404 pages
+	Remove remaining create function calls
+4.0.26 - 2014-04-18 - Packaging Bot (core)
+	Make sure uploads directory is only working in blog 1 in multisite
+	Better checks for run method in module loader
+4.0.27 - 2014-04-18 - Packaging Bot (modules/free)
+	XMLRPC soft block should now work with WordPress mobile app
+4.1.1 - 2014-04-21 - Packaging Bot (core)
+	Make sure "remove write permissions" works
+	Better descriptions on white list
+	Add pro table of contents if needed
+	Make sure security admin bar item works
+	Make sure lockout message only happens when needed
+	Suppress errors on readlink calls
+	Make sure class is present for permanent ban
+	Make sure white list is an array
+	Fix white listed IPs not working
+4.1.2 - 2014-04-21 - Packaging Bot (modules/free)
+	Log when Away-mode is triggered
+	Make sure away mode file isn't accidently deleted
+	Make sure away mode doesn't even allow access to the login form (as it didn't in 3.x)
+	Enhance warnings on "Change content directory" settings
+	Better descriptions on white lists
+	Fixed XMLRPC label
+	Better XMLRPC Dashboard status
+	Don't allow logout action on wp-login.php with hide backend
+4.1.3 - 2014-04-21 - Packaging Bot (modules/free)
+	Better check for variable in SSL admin
+4.1.4 - 2014-04-24 - Packaging Bot (core)
+	Miscelaneous typos and other fixes
+	Remove extra file lock on saving .htaccess, nginx.conf and wp-config.php. Only flock will be used in these operations
+4.1.5 - 2014-04-24 - Packaging Bot (modules/free)
+	Fixed a function not found error in the brute force module
+	Improved content filtering in SSL so that more images and other content will link with appropriate protocol.
+	Fixed hide backend in cases where a lockout has expired
+	Miscelaneous typos and other fixes.
+4.2.1 - 2014-05-07 - Packaging Bot (core)
+	Updated core to version 1.2.0
+4.2.2 - 2014-05-07 - Packaging Bot (modules/free)
+	Updated modules/free to version 1.2.0

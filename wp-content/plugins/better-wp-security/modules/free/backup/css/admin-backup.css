@@ -1,0 +1,16 @@
+div.inside ul.ms-list {
+	margin-left : 0;
+}
+
+.ms-container {
+	margin-top : 10px;
+}
+
+.ms-container .custom-header {
+	font-weight : bold;
+	text-align  : center;
+}
+
+#backupbuddy_info .bub-cta {
+	margin: 2em .5em;
+}
