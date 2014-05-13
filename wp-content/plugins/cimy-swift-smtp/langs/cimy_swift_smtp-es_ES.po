@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cimy Swift SMTP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-29 14:56-0800\n"
+"PO-Revision-Date: 2013-12-29 14:58-0800\n"
+"Last-Translator: Maria Ramos <mariar@webhostinghub.com>\n"
+"Language-Team: Maria Ramos <mariar@webhostinghub.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SearchPath-0: /var/www/wp-content/plugins/cimy-swift-smtp\n"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:107
+msgid "Add here your SMTP server details"
+msgstr "Adicione aquí sus datos del servidor SMTP"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:107
+#, php-format
+msgid "<strong>Note:</strong> Gmail users need to use the server 'smtp.gmail.com' with TLS enabled and port %s"
+msgstr "<strong>Nota:</strong> Los usuarios de Gmail tienen que utilizar el servidor  'smtp.gmail.com',  tener habilitado TLS y el puerto %s"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:114
+msgid "Sender name:"
+msgstr "Nombre del Remitente:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:122
+msgid "Sender e-mail:"
+msgstr "E-mail del remitente:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:130
+msgid "Never overwrite the sender:"
+msgstr "Nunca sobrescribir el remitente:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:138
+msgid "Always overwrite the sender:"
+msgstr "Siempre sobrescribir el remitente:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:146
+#, php-format
+msgid "Overwrite the sender only for the WordPress default [%s]:"
+msgstr "Sobreescribir solo el remitente por el por defecto de WordPress [%s]:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:154
+msgid "SMTP server address:"
+msgstr "dirección del servidor SMTP:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:162
+msgid "Port:"
+msgstr "Puerto:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:166
+#, php-format
+msgid "%s (Default SMTP Port)"
+msgstr "%s (puerto por defecto SMTP)"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:167
+#, php-format
+msgid "%s (Use for SSL/GMAIL)"
+msgstr "%s (Para utilizar SSL/GMAIL)"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:168
+#, php-format
+msgid "%s (Use for TLS/STARTTLS/GMAIL)"
+msgstr "%s (Para utilizar TLS/STARTTLS/GMAIL)"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:169
+msgid "Custom Port: (Use Box)"
+msgstr "Puerto Personalizado: (Utilice el campo)"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:175
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:183
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:191
+msgid "Use SSL or TLS?:"
+msgstr "¿Utilizar SSL o TLS?:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:195
+msgid "No"
+msgstr "No"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:196
+msgid "SSL"
+msgstr "SSL"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:197
+msgid "TLS (Use for Gmail)"
+msgstr "TLS (utilizar para Gmail)"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:203
+#, php-format
+msgid "The selected protocol '%s' is not available on your PHP configuration, check how to enable it from %s"
+msgstr "La selección del protocolo '%s' no se encuentra disponible en su configuración PHP, verifique como habilitarla desde %s"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:212
+msgid "Save Changes"
+msgstr "Guardar los cambios"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:216
+msgid "Test Connection"
+msgstr "La selección del protocolo '%s' no se encuentra disponible en su configuración PHP, verifique como habilitarla desde %s"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:217
+msgid "Once you've saved your settings, click the link below to test your connection."
+msgstr "Una vez que haya guardado la configuración, haga clic en el enlace de abajo para probar su conexión."
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:220
+msgid "Send Test Email to this Address:"
+msgstr "Enviar correo electrónico de prueba a esta dirección:"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:220
+msgid "Send Test"
+msgstr "Enviar Prueba"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:225
+msgid "Test result"
+msgstr "Enviar resultado"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:231
+msgid "This is a test mail sent using the Cimy Swift SMTP Plugin. If you've received this email it means your connection has been set up properly! Cool!"
+msgstr "Este es un correo de prueba utilizando el Plugin Cimy Swift SMTP. ¡Si usted recibe este correo significa que su conexión ha sido establecida correctamente! ¡Genial!"
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:234
+msgid "TEST EMAIL SENT - Connection Verified."
+msgstr "PRUEBA DE CORREO ENVIADA - Conexión verificada."
+
+#: /var/www/wp-content/plugins/cimy-swift-smtp/cimy_swift_smtp.php:234
+msgid "If you don't receive the e-mail check also the spam folder."
+msgstr "Si usted no recibe este correo revise su carpeta spam."
+
