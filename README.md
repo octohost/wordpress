@@ -55,4 +55,27 @@ git remote add octo git@ip.address.here:wordpress.git
 git push octo master
 ```
 
+To work on the site locally:
+
+1. Install [direnv](http://direnv.net/).
+2. cp envrc .envrc # Change the exported values to be accurate.
+3. `brew install wp-cli`
+4. Install `wp server` - simple instructions are [here](https://github.com/wp-cli/wp-cli/wiki/Community-Packages).
+5. Startup the server inside the wordpress directory, `wp server` - you should see some output that looks like this:
+
+```
+[] darron@~: cd Dropbox/src/wordpress/
+direnv: loading .envrc
+direnv export: +AUTH_KEY +AUTH_SALT +AWS_ACCESS_KEY_ID +AWS_SECRET_ACCESS_KEY +LOGGED_IN_KEY +LOGGED_IN_SALT +MYSQL_DATABASE +MYSQL_SERVER +MYSQL_USERNAME +NONCE_KEY +NONCE_SALT +SECURE_AUTH_KEY +SECURE_AUTH_SALT
+[master] darron@~/Dropbox/src/wordpress: wp server
+PHP 5.4.25 Development Server started at Tue May 13 23:34:24 2014
+Listening on http://localhost:8080
+Document root is /Users/darron/Dropbox/src/wordpress
+Press Ctrl-C to quit.
+[Tue May 13 23:34:34 2014] ::1:61179 [302]: /
+[Tue May 13 23:34:34 2014] ::1:61186 [200]: /wp-includes/css/buttons.min.css?ver=3.9.1
+[Tue May 13 23:34:34 2014] ::1:61187 [200]: /wp-admin/css/install.min.css?ver=3.9.1
+[Tue May 13 23:34:34 2014] ::1:61188 [200]: /wp-includes/js/jquery/jquery.js?ver=1.11.0
+```
+
 Should be a relatively hassle and hack free container.
